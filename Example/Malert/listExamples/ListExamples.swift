@@ -21,6 +21,8 @@ extension ListExamplesViewController {
         addExample7()
         addExample8()
         addExample9()
+		addOrientationIssueExample()
+		addOrientationIssueFixedExample()
     }
     
     private func addExample1() {
@@ -210,4 +212,29 @@ extension ListExamplesViewController {
 
         examples.append(Example(title: "Example 9 (UITableView)", malert: alert))
     }
+	
+	private func addOrientationIssueExample() {
+		let example8View = ExampleOrientationIssue.instantiateFromNib()
+		
+		let alert = Malert(customView: example8View)
+		//alert.margin = 20
+		//alert.animationType = .modalRight
+		//alert.backgroundColor = UIColor(red:0.36, green:0.86, blue:0.84, alpha:1.0)
+		//alert.cornerRadius = 20
+		
+		examples.append(Example(title: "Example Orientation Issue", malert: alert))
+	}
+	
+	private func addOrientationIssueFixedExample() {
+		let example8View = ExampleOrientationIssue.instantiateFromNib()
+		
+		let alert = Malert(customView: example8View)
+		//alert.margin = 20
+		//alert.animationType = .modalRight
+		//alert.backgroundColor = UIColor(red:0.36, green:0.86, blue:0.84, alpha:1.0)
+		//alert.cornerRadius = 20
+		alert.useFix = true
+		
+		examples.append(Example(title: "Example Orientation Issue (Fixed)", malert: alert))
+	}
 }

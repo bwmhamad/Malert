@@ -11,6 +11,8 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		701F6411261BAA7300F7E3F8 /* ExampleOrientationIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701F6410261BAA7300F7E3F8 /* ExampleOrientationIssue.swift */; };
+		701F6415261BAA8100F7E3F8 /* ExampleOrientationIssue.xib in Resources */ = {isa = PBXBuildFile; fileRef = 701F6414261BAA8100F7E3F8 /* ExampleOrientationIssue.xib */; };
 		FC0D8424210B7E6D0044EF5C /* Example8View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D8423210B7E6D0044EF5C /* Example8View.swift */; };
 		FC0D8426210B7E770044EF5C /* Example8View.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0D8425210B7E770044EF5C /* Example8View.xib */; };
 		FC0EA23A1E6A2C9100F3A527 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = FC0EA2391E6A2C9100F3A527 /* CHANGELOG.md */; };
@@ -47,6 +49,8 @@
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		701F6410261BAA7300F7E3F8 /* ExampleOrientationIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleOrientationIssue.swift; sourceTree = "<group>"; };
+		701F6414261BAA8100F7E3F8 /* ExampleOrientationIssue.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleOrientationIssue.xib; sourceTree = "<group>"; };
 		83E23EA6345EA39F3D02EEAE /* Pods-Malert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Malert_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Malert_Example/Pods-Malert_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		98737553F911AA11740A107E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A2A84EB05579A47CCBE9BFD2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -162,6 +166,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		701F640E261BAA3B00F7E3F8 /* ExampleOrientationIssue */ = {
+			isa = PBXGroup;
+			children = (
+				701F6410261BAA7300F7E3F8 /* ExampleOrientationIssue.swift */,
+				701F6414261BAA8100F7E3F8 /* ExampleOrientationIssue.xib */,
+			);
+			path = ExampleOrientationIssue;
+			sourceTree = "<group>";
+		};
 		FC0D8422210B7E480044EF5C /* example8 */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +252,7 @@
 		FCB2052C20FBF80A009EB2BC /* examples */ = {
 			isa = PBXGroup;
 			children = (
+				701F640E261BAA3B00F7E3F8 /* ExampleOrientationIssue */,
 				FC87D8EB213714900006A7EF /* example9 */,
 				FC0D8422210B7E480044EF5C /* example8 */,
 				FCD67871210A6E110012DFD2 /* example7 */,
@@ -299,7 +313,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				9F1A9335C3FCF99282245E90 /* [CP] Embed Pods Frameworks */,
-				58EB663D3F8BC672F363158F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,7 +335,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = KXWH4SC5H2;
+						DevelopmentTeam = 93ZAV8UM6U;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -352,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				701F6415261BAA8100F7E3F8 /* ExampleOrientationIssue.xib in Resources */,
 				FC8F3A912101144000189BFC /* Example4View.xib in Resources */,
 				FC2182301DE4EB0B003F99AE /* FirstCustomView.xib in Resources */,
 				FC8F3A96210146A600189BFC /* Example5View.xib in Resources */,
@@ -386,28 +400,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		58EB663D3F8BC672F363158F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Malert_Example/Pods-Malert_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9F1A9335C3FCF99282245E90 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Malert_Example/Pods-Malert_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Malert_Example/Pods-Malert_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Malert/Malert.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -416,7 +415,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Malert_Example/Pods-Malert_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Malert_Example/Pods-Malert_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -437,6 +436,7 @@
 				FC87D8F0213725990006A7EF /* Example9TableViewCell.swift in Sources */,
 				FCB2052A20FBF09F009EB2BC /* ExampleTableViewCell.swift in Sources */,
 				FCDF1D6B20FE21C100EEBFE9 /* Example2View.swift in Sources */,
+				701F6411261BAA7300F7E3F8 /* ExampleOrientationIssue.swift in Sources */,
 				FC87D8ED213716EE0006A7EF /* Example9View.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				FC2182321DE4EB29003F99AE /* FirstCustomView.swift in Sources */,
@@ -572,7 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KXWH4SC5H2;
+				DEVELOPMENT_TEAM = 93ZAV8UM6U;
 				INFOPLIST_FILE = Malert/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -593,7 +593,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KXWH4SC5H2;
+				DEVELOPMENT_TEAM = 93ZAV8UM6U;
 				INFOPLIST_FILE = Malert/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

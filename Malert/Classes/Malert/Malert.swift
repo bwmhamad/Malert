@@ -21,6 +21,7 @@ public class Malert: BaseMalertViewController {
    let tapToDismiss: Bool
    let dismissOnActionTapped: Bool
    var completionBlock: (() -> Void)?
+   public var useFix = false
    
    lazy var visibleView: UIView = {
       let visibleView = UIView()
